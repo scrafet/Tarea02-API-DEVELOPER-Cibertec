@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Home</title>
+</head>
+<body>
+    <h1>Publicaciones</h1>
+
+    <!-- Enlace para crear una nueva publicación -->
+    {% if current_user.is_authenticated %}
+        <a href="{{ url_for('main.new_post') }}">Crear una nueva publicación</a>
+    {% else %}
+        <p><a href="{{ url_for('main.login') }}">Inicia sesión</a> para crear una nueva publicación.</p>
+    {% endif %}
+
+    <hr>
+
+    <!-- Lista de publicaciones -->
+    {% if posts %}
+        <ul>
+            {% for post in posts %}
+                <li>
+                    <h2>{{ post.title }}</h2>
+                    <p>{{ post.content }}</p>
+                    <small>Publicado el: {{ post.date_posted }}</small>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No hay publicaciones aún.</p>
+    {% endif %}
+
+</body>
+</html>
