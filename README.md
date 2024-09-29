@@ -29,7 +29,9 @@ Para crear publicaciones, primero necesitas un usuario. Puedes crear uno accedie
 
 Abrir el Terminal de Python:
 
+```
 python
+```
 
 Ejecutar los Siguientes Comandos:
 ```
@@ -51,14 +53,16 @@ Este comando creará un usuario con:
     Email: admin@example.com
     Contraseña: password123
 
-Navegar por la Aplicación
-
-    Página login: Permite acceder con credenciales al blog http://127.0.0.1:5000/login.
+Navegar por la Aplicación:
+    Página login: Permite acceder con credenciales al blog 
     Página Principal: Muestra todas las publicaciones creadas.
     Crear una Nueva Publicación: Debes estar autenticado para ver el enlace para crear una nueva publicación.
     Añadir Comentarios: Cualquier usuario puede añadir comentarios a las publicaciones.
+```
+http://127.0.0.1:5000/login
+```
 
-Licencia
+Licencia :
 Este proyecto está licenciado bajo la Licencia MIT.
 
 Autor :
