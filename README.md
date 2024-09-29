@@ -54,6 +54,7 @@ Este comando creará un usuario con:
     Contraseña: password123
 
 Navegar por la Aplicación:
+
     Página login: Permite acceder con credenciales al blog 
     Página Principal: Muestra todas las publicaciones creadas.
     Crear una Nueva Publicación: Debes estar autenticado para ver el enlace para crear una nueva publicación.
