@@ -32,7 +32,7 @@ Abrir el Terminal de Python:
 python
 
 Ejecutar los Siguientes Comandos:
-
+```
 from app import create_app
 from extensions import db, bcrypt
 from models import User
@@ -44,7 +44,7 @@ with app.app_context():
     user = User(username='admin', email='admin@example.com', password=hashed_password)
     db.session.add(user)
     db.session.commit()
-
+```
 
 Este comando creará un usuario con:
 
