@@ -63,8 +63,8 @@ Navegar por la Aplicación:
 http://127.0.0.1:5000/login
 ```
 
-Licencia :
+## Licencia :
 Este proyecto está licenciado bajo la Licencia MIT.
 
-Autor :
+## Autor :
 Creado por Waldo Anthony Berrocal García.
