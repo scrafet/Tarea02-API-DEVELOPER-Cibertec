@@ -42,16 +42,16 @@ from models import User
 app = create_app()
 
 with app.app_context():
-    hashed_password = bcrypt.generate_password_hash('password123').decode('utf-8')
-    user = User(username='admin', email='admin@example.com', password=hashed_password)
+    hashed_password = bcrypt.generate_password_hash('123').decode('utf-8')
+    user = User(username='admin', email='admin@mail.com', password=hashed_password)
     db.session.add(user)
     db.session.commit()
 ```
 
 Este comando creará un usuario con:
 
-    Email: admin@example.com
-    Contraseña: password123
+    Email: admin@mail.com
+    Contraseña: 123
 
 Navegar por la Aplicación:
 
